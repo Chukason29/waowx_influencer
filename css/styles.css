@@ -1,0 +1,389 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.animated-element {
+    opacity: 0;
+    position: relative;
+    top: 5rem;
+    transition: all .8s ease;
+    transition-delay: 2.7;
+}
+.animated-element.visible {
+    opacity: 1;
+    position: relative;
+    top: 0rem;
+    transition: all .9s ease;
+}
+#main-banner{
+    position: relative;
+    font-family: "Montserrat", sans-serif;
+}
+#main-banner-img{
+    height: auto;
+}
+#main-banner-writ{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .85);
+    color: #fff;
+}
+.logo img{
+    width: 200px;
+}
+#main-banner video{
+    width: 100%;
+}
+.main-banner-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 5rem;
+}
+.main-banner-header i{
+    font-size: 1.75rem;
+}
+.be-seen{
+    margin-top: 3rem;
+}
+.be-seen h1{
+    font-size: 7rem;
+    padding-inline: 5rem;
+    margin-top: 8rem;
+}
+#main-banner-writ button{
+    background-color: rgb(211, 0, 0);
+    width: 32%;
+    margin-inline: auto;
+    font-size: 2rem;
+    border: none;
+    color: #ffffff;
+    display: inline-block;
+    padding: .75rem 0rem;
+}
+#menu-icon{
+    color: #ffffff;
+}
+#menu-nav{
+    background-color: rgb(21,23,25);
+    list-style: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-inline: 2rem 5rem;
+    padding-block: 3.5rem;
+    text-align: right;
+    font-family: var(--menu-font);
+    width: 250px;
+    height: 350px;
+    z-index: 999;
+}
+#menu-nav ul{
+    list-style: none;
+}
+#menu-nav ul li{
+    margin-block-start: 1rem;
+}
+#menu-nav a{
+    font-weight: 600;
+    color: rgb(160,160,160);
+    text-decoration: none;
+}
+#menu-nav a:hover{
+    color: #ffffff;
+}
+#menu-nav i{
+    color: #ffffff;
+    margin-block-end: 2rem;
+}
+.hide-menu{
+    transform: scale(0, 0);
+    transform-origin: right;
+    transition: transform .5s ease-in-out;
+}
+#open-menu{
+    cursor: pointer;
+}
+.show-menu{
+    transform: scale(1, 1);
+    transform-origin: right;
+    transition: transform .5s ease-in-out;
+}
+#billboard-look{
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    padding-block: 3rem;
+}
+.billboard-look-div{
+    width: 25%;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.billboard-look-div img{
+    max-width: 100%;
+}
+.billboard-look-writ{
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .85);
+    color: #E0E1E4;
+    padding-inline: .5rem;
+}
+.billboard-look-writ p{
+    font-family: "Jost" sans-serif;
+}
+.billboard-look-writ h1{
+    font-family: "Josefin Sans", sans-serif;
+}
+
+#walking-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    height: 80vh;
+    background-image: linear-gradient(to right, rgba(255, 105, 105, 0.04), #fff);
+}
+#walking-image > div{
+    width: 25%;
+}
+#walking-image img{
+    max-width: 100%;
+}
+#walking-image p{
+    font-family: "Jost" sans-serif;
+    font-size: 3.8rem;
+    font-weight: 600;
+}
+#figures{
+    padding: 3rem 0rem;
+    background-color: rgb(250,250,250);
+}
+#figures-one{
+    text-align: center;
+    width: 60%;
+    margin-inline: auto;
+}
+#figures-one h1{
+    font-family: "Poppins", sans-serif;
+}
+#figures-one p{
+    font-family: "Jost", sans-serif;
+    margin-top: 40px;
+    font-size: 1.15rem;
+}
+#figures-two{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+.threshholds{
+    border: 1px solid black;
+    width: 13.5%;
+    padding: .75rem;
+    border-radius: 10px;
+}
+.threshholds h1{
+    margin-bottom: 25px;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 900;
+}
+.threshholds p{
+    line-height: 5px;
+    font-family: "Jost", sans-serif;
+}
+#figures-three{
+    text-align: center;
+    margin-top: 50px;
+}
+#figures-three p{
+    font-family: "Poppins", sans-serif;
+    font-size: 2.1rem;
+}
+#figures-three button, #walking-image button{
+    background-color: rgb(209, 0, 0);
+    border: none;
+    color: #fff;
+    font-size: 1.65rem;
+    display: inline-block;
+    padding: .5rem 1.45rem;
+}
+#figures-three button:hover{
+    background-color: rgba(209, 0, 0, .7);
+}
+#connect-socials{
+    display: flex;
+}
+.social-blocks{
+    width: 25%;
+    height: 35vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+.brand-title{
+    margin-top: 2rem;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 3px;
+}
+.brand-title ~ p{
+    font-family: "Young Serif", serif;
+    font-size: 1.5rem;
+    padding-inline: 3rem;
+}
+.social-blocks i{
+    font-size: 2rem; 
+}
+.social-blocks a{
+    display: block;
+    background-color: rgb(255, 255, 255);
+    color: rgb(50, 50, 50);
+    text-decoration: none;
+    margin: auto;
+}
+.social-blocks a:hover{
+    color: rgba(199, 0, 0, 0.733);
+}
+#footer{
+    background-color: black;
+    color: #fff;
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 1rem;
+}
+#footer > div{
+    width: 33.33%;
+}
+#footer img{
+    width: 250px;
+}
+#contact-form{
+    width: 100%;
+}
+#contact-form input{
+    width: 80%;
+    margin-inline: auto;
+    display: block;
+    border: 1px solid rgb(150, 150, 150);
+    margin-top: .5rem;
+    height: 35px;
+    padding-left: 1rem;
+}
+#contact-form button{
+    margin-top: 1rem;
+    display: block;
+    border: none;
+    color: white;
+    background-color: black;
+    text-align: center;
+    width: 80%;
+    margin-inline: auto;
+    padding-block: .5rem;
+}
+#contact-form button:hover{
+    background-color: rgb(150, 150, 150);
+}
+#loader{
+    display: none;
+}
+
+@media screen and (max-width: 598px) {
+    #main-banner video{
+        display: none;
+    }
+    #main-banner-writ{
+        position: relative;
+        padding-bottom: 3rem;
+    }
+    .main-banner-header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 1.5rem;
+    }
+    .logo img{
+        width: 140px;
+    }
+    .be-seen h1{
+        font-size: 3rem;
+    }
+    #main-banner-writ button{
+        width: 80%;
+        font-size: 1.3rem;
+    }
+    #billboard-look{
+        display: block;
+        padding-block: 0rem;
+    }
+    .billboard-look-div{
+        width: 100%;
+        margin-top: 1rem;
+    }
+    #walking-image{
+        display: block;
+        height: auto;
+        padding-block: 2rem;
+    }
+    #walking-image > div{
+        width: 90%;
+        margin-inline: auto;
+        margin-top: 1.5rem;
+    }
+    #walking-image p{
+        font-size: 3rem;
+    }
+    #figures{
+        padding: 3rem 1rem;
+        background-color: rgb(250,250,250);
+    }
+    #figures-one{
+        text-align: center;
+        width: 100%;
+        margin-inline: auto;
+    }
+    #figures-two{
+        display: block;
+    }
+    .threshholds{
+        border: 1px solid black;
+        width: 68%;
+        padding: .75rem;
+        border-radius: 10px;
+        margin-inline: auto;
+        margin-top: 1rem;
+    }
+    #connect-socials{
+        display: block;
+    }
+    .social-blocks{
+        width: 100%;
+        margin-inline: auto;
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+    #footer{
+        display: block;
+    }
+    #footer > div{
+        width: 100%;
+        margin-block: 1rem;
+    }
+    #footer img{
+        width: 150px;
+        margin: auto;
+        display: block;
+    }
+}
