@@ -116,35 +116,26 @@
     transform-origin: right;
     transition: transform .5s ease-in-out;
 }
-#billboard-look{
-    display: flex;
-    justify-content: center;
-    gap: 1.5rem;
-    padding-block: 3rem;
-}
-.billboard-look-div{
-    width: 25%;
-    border-radius: 10px;
-    position: relative;
+.influencer{
     overflow: hidden;
+    white-space: nowrap;
 }
-.billboard-look-div img{
-    max-width: 100%;
+.influencer img{
+    height: 320px;
+    margin: 0 30px;
 }
-.billboard-look-writ{
-    position: absolute;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, .85);
-    color: #E0E1E4;
-    padding-inline: .5rem;
+@keyframes slide {
+    from{
+        transform: translateX(0)
+    }
+    to{
+        transform: translateX(-100%)
+    }
 }
-.billboard-look-writ p{
-    font-family: "Jost" sans-serif;
+.influencer-slide{
+    display: inline-block;
+    animation: 25s slide infinite linear;
 }
-.billboard-look-writ h1{
-    font-family: "Josefin Sans", sans-serif;
-}
-
 #walking-image{
     display: flex;
     justify-content: center;
