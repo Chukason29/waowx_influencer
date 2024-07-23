@@ -27,12 +27,12 @@ function sendMail($email, $message)
         $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
     
         //Recipients
-        $mail->setFrom('contact@waowx.com', 'Billboards with WAOWX INNOVATIONS');
+        $mail->setFrom('contact@waowx.com', 'Influencer with WAOWX INNOVATIONS');
         $mail->addAddress($email);     //Add a recipient
     
         //Content
         $mail->isHTML(true);                                  //Set email format to HTML
-        $mail->Subject = 'Billboards with WAOWX INNOVATIONS';
+        $mail->Subject = 'Influencer with WAOWX INNOVATIONS';
         $mail->Body    = $message;
     
         $mail->send();
@@ -93,7 +93,7 @@ function sendMail($email, $message)
             break;
     }
     if (TRUE == $valid) {
-        $waowx_msg = "Hello Waowx <br> I am $name and I am interested in using WAOWX billboards <br> my details are below<br> email: $email<br> phone: $phone";
+        $waowx_msg = "Hello Waowx <br> I am $name and I am interested in using partnering with WAOWX influencers <br> my details are below<br> email: $email<br> phone: $phone";
         if(@sendMail("tobi@waowx.com", $waowx_msg)){
             echo "<div class = 'alert alert-success alert-dismissible w-100 mx-auto' role= 'alert'>
                         Thanks for contacting waowx. 
