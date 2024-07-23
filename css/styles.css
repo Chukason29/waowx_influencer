@@ -309,6 +309,8 @@
     }
     .be-seen h1{
         font-size: 3rem;
+        padding-inline: 2rem;
+        margin-top: 3rem;
     }
     #main-banner-writ button{
         width: 80%;
