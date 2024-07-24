@@ -136,25 +136,90 @@
     display: inline-block;
     animation: 25s slide infinite linear;
 }
-#walking-image{
+
+#first-services{
+    width: 100%;
+    height: 100vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1.5rem;
-    height: 80vh;
-    background-image: linear-gradient(to right, rgba(255, 105, 105, 0.04), #fff);
 }
-#walking-image > div{
-    width: 25%;
+#first-services > div{
+    width: 50%;
+    height: 100vh;
 }
-#walking-image img{
+#first-services img{
     max-width: 100%;
 }
-#walking-image p{
-    font-family: "Jost" sans-serif;
-    font-size: 3.8rem;
-    font-weight: 600;
+.first-services-left-div{
+    display: flex;
+    flex-wrap: wrap;
 }
+.first-services-left-div > div{
+    width: 50%;
+    height: 50vh;
+    overflow: hidden;
+}
+.first-service-left-writ{
+    display: flex;
+    align-items: center;
+    padding: .5rem;
+    border-top: 3.5px solid rgb(233, 5, 5);
+    border-bottom: 3.5px solid #000000;
+    font-family: "Young Serif", serif;
+    font-weight: 900;
+    text-shadow: 0px 0px 1px red;
+    font-size: 5rem;
+}
+.first-service-left-img{
+    position: relative;
+}
+.first-service-left-writ-img{
+    position: absolute;
+    top: 40%;
+    color: #fff;
+    font-family: "young serif", sans-serif;
+    text-align: center;
+    width: 100%;
+}
+.first-service-left-writ-img h3{
+    display: none;
+}
+.first-service-left-writ h3{
+    width: 70%;
+    margin-inline: auto;
+}
+.first-services-left-div img{
+    filter: brightness(.4);
+    transform: scale(1);
+    transition-duration: .3s;
+}
+.first-services-left-div img:hover{
+    transform: scale(1.1);
+    transition-duration: .45s;
+    z-index: -9;
+}
+.first-services-right{
+    overflow: hidden;
+    position: relative;
+}
+.first-services-right h3{
+    font-family: "Young Serif", serif;
+}
+.first-services-right img{
+    filter: brightness(.35);
+    transform: scale(1);
+    transition-duration: .35s;
+}
+.first-services-right img:hover{
+    transform: scale(1.2);
+    transition-duration: .35s;
+}
+.first-services-right-inner{
+    color: #fff;
+    padding-inline: 5rem;
+    position: absolute;
+    top: 18%;
+}
+
 #figures{
     padding: 3rem 0rem;
     background-color: rgb(250,250,250);
