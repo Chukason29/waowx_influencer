@@ -385,26 +385,30 @@
     #main-banner-writ button span{
         display: none;
     }
-    #billboard-look{
-        display: block;
-        padding-block: 0rem;
-    }
-    .billboard-look-div{
-        width: 100%;
-        margin-top: 1rem;
-    }
-    #walking-image{
-        display: block;
+    #first-services{
         height: auto;
-        padding-block: 2rem;
+        display: block;
     }
-    #walking-image > div{
-        width: 90%;
-        margin-inline: auto;
-        margin-top: 1.5rem;
+    #first-services > div{
+        width: 100%;
+        height: auto;
     }
-    #walking-image p{
-        font-size: 3rem;
+    .first-services-left-div{
+        display: block;
+    }
+    .first-services-left-div > div{
+        width: 100%;
+        height: 50vh;
+        overflow: hidden;
+    }
+    .first-service-left-writ{
+        display: none;
+    }
+    .first-service-left-writ-img h3{
+        display: block;
+    }
+    .first-services-right-inner{
+        padding-inline: 3rem;
     }
     #figures{
         padding: 3rem 1rem;
